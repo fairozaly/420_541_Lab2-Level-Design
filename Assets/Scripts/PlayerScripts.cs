@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
-    public float moveSpeed = 6.0f;
-    public float jumpForce = 5.0f;
+    public float moveSpeed = 7.0f;
+    public float jumpForce = 6.0f;
 
     [Header("Ground Check")]
     public LayerMask groundMask;
