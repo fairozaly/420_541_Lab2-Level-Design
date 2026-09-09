@@ -10,6 +10,13 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundMask;
     public float groundCheckDistance = 0.2f;
 
+    [Header("Camera")]
+    public Transform cameraTransform; 
+    public float minPitch = -80f;
+    public float maxPitch = 80f;
+
+private float pitch = 0f;
+
     Rigidbody rb;
     public float mouseSensitivity = 2.0f;
 
@@ -36,6 +43,12 @@ public class PlayerController : MonoBehaviour
         {
             jumpRequested = true;
         }
+
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+        transform.Rotate(0f, mouseX, 0f, Space.World);
+        pitch -= mouseY; 
+        pitch = Mathf.Clamp(pitch, minPitch, maxPitch);
+        cameraTransform.localRotation = Quaternion.Euler(pitch, 0f, 0f);
     }
 
     void FixedUpdate()
