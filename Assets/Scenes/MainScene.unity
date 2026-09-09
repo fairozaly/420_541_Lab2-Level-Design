@@ -2282,7 +2282,6 @@ Transform:
   m_Children:
   - {fileID: 1804474389}
   - {fileID: 963194228}
-  - {fileID: 1683565465}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &388604778
@@ -2303,9 +2302,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1
   groundCheckDistance: 1
-  cameraTransform: {fileID: 963194228}
-  minPitch: -80
-  maxPitch: 80
   mouseSensitivity: 2
 --- !u!136 &388604779
 CapsuleCollider:
@@ -2375,9 +2371,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   groundCheckDistance: 0.2
-  cameraTransform: {fileID: 963194228}
-  minPitch: -80
-  maxPitch: 80
   mouseSensitivity: 0.1
 --- !u!1 &455666100
 GameObject:
@@ -5989,7 +5982,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.66, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7886,7 +7879,7 @@ Transform:
   m_GameObject: {fileID: 1352596093}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 31.467823, y: 1.1803477, z: -18.11952}
+  m_LocalPosition: {x: 32.9, y: 1.1803477, z: -18.11952}
   m_LocalScale: {x: 16.749344, y: 10, z: 7.4986}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9668,11 +9661,11 @@ Transform:
   m_GameObject: {fileID: 1683565464}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: -3.4499998, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 388604777}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1698712190
 Mesh:
@@ -9828,7 +9821,7 @@ Mesh:
     m_Center: {x: -86.90398, y: 0.15600014, z: 75.25844}
     m_Extent: {x: 89.61348, y: 0.15601969, z: 75.18323}
   m_MeshUsageFlags: 0
-  m_CookingOptions: 30
+  m_CookingOptions: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   'm_MeshMetrics[0]': 1
@@ -10055,7 +10048,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: -3661639628750336703, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12374,7 +12367,7 @@ Transform:
   m_GameObject: {fileID: 1804474388}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14153,7 +14146,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: -3661639628750336703, guid: 7e0223e1d3e1733499accfa5ebffb67e, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15719,8 +15712,8 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
+  m_Convex: 1
+  m_CookingOptions: 0
   m_Mesh: {fileID: 1698712190}
 --- !u!33 &2031845633
 MeshFilter:
@@ -16611,3 +16604,4 @@ SceneRoots:
   - {fileID: 2031845637}
   - {fileID: 2025541788}
   - {fileID: 1845006112}
+  - {fileID: 1683565465}

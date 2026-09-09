@@ -33,9 +33,10 @@ public class CameraScript : MonoBehaviour
     }
 
     void LateUpdate()
-    {
+    {        
+        float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+
         // Calculate pitch (up/down) for the camera
-        float mouseY = lookInput.y * mouseSensitivity;
         verticalLook -= mouseY;
         verticalLook = Mathf.Clamp(verticalLook, -lookLimit, lookLimit);
 
